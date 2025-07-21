@@ -13,15 +13,17 @@ def show():
 
     # === Statistik Dataset ===
     with st.expander("📊 Statistik Dataset", expanded=True):
-        total_rows = df.shape[0]
-        total_columns = df.shape[1]
-        target_col = 'Churn'
-        feature_cols = df.drop(columns=[target_col]).shape[1] if target_col in df.columns else total_columns
-        col1, col2, col3, col4 = st.columns(4)
-        col1.metric("Jumlah Baris", total_rows)
-        col2.metric("Jumlah Kolom", total_columns)
-        col3.metric("Fitur", feature_cols)
-        col4.metric("Target", 1 if target_col in df.columns else 0)
+    total_rows = df.shape[0]
+    total_columns = df.shape[1]
+    target_col = 'Churn'
+    feature_cols = df.drop(columns=[target_col]).shape[1] if target_col in df.columns else total_columns
+    target_count = 1 if target_col in df.columns else 0
+
+    st.info(f"""
+    **📌 Jumlah Baris:** {total_rows}  
+    **📌 Jumlah Kolom:** {total_columns}  
+    **📌 Kolom Fitur:** {feature_cols}  
+    **📌 Kolom Target:** {target_count} """)
 
     # === Sampel Dataset ===
     with st.expander("📄 Sampel Data (Top 5 Baris)"):
