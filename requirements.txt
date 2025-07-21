@@ -6,3 +6,4 @@ imblearn
 streamlit
 seaborn
 matplotlib
+scipy
