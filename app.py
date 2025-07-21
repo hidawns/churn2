@@ -1,9 +1,9 @@
 import streamlit as st
-import pages.Home as Home
-import pages.Overview as Overview
-import pages.Dataset as Dataset
-import pages.EDA as EDA
-import pages.Inference as Inference
+import modules.Home as Home
+import modules.Overview as Overview
+import modules.Dataset as Dataset
+import modules.EDA as EDA
+import modules.Inference as Inference
 
 # Sidebar untuk navigasi
 st.sidebar.title("📌 Navigasi")
