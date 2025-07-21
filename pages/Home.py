@@ -5,7 +5,7 @@ def show():
     st.title("Optimalisasi XGBoost dengan SMOTE-ENN dan GridSearchCV")
     st.markdown("### by [Nama Kamu]")
 
-    st.image("assets/churn_image.jpg", use_container_width=True)
+    st.image("assets/churn_image.jpg")
     st.caption("Customer Retention Illustration")
 
 
