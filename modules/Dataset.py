@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-sns.set_theme(style="whitegrid", palette="pastel")
+import io
 
 def show():
     st.title("📊 Dataset: IBM Telco Customer Churn")
@@ -24,7 +23,6 @@ def show():
 
     # === Informasi Struktur Data ===
     with st.expander("🔎 Struktur & Tipe Data"):
-        import io
         buffer = io.StringIO()
         df.info(buf=buffer)
         s = buffer.getvalue()
