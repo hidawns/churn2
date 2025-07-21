@@ -5,7 +5,7 @@ def show():
     st.title("Optimalisasi XGBoost dengan SMOTE-ENN dan GridSearchCV")
     st.markdown("### by [Nama Kamu]")
 
-    st.image("assets/churn_image.jpg", use_container_width, caption="Customer Retention Illustration")
+    st.image("assets/churn_image.jpg", use_container_width=True, caption="Customer Retention Illustration")
 
     st.markdown("#### 🎯 Tujuan Aplikasi")
     st.write("Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan churn menggunakan model XGBoost yang telah dioptimasi dengan teknik SMOTE-ENN dan GridSearchCV.")
