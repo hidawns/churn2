@@ -10,8 +10,6 @@ st.set_page_config(layout="wide")  # biar tampilannya dashboard-style
 # Sidebar sebagai menu navigasi
 with st.sidebar:
     st.markdown("## 📌 Navigasi")
-    st.markdown("---")
-
     if st.button("🏠 Home"):
         st.session_state.page = "Home"
     if st.button("📖 Overview"):
