@@ -9,7 +9,7 @@ def show():
 
     col1, col2 = st.columns([1, 2])
     with col1: 
-        st.image("assets/churn_image.jpg", caption="Ilustrasi Customer Retention",use_container_width=True)
+        st.image("assets/churn_image.jpg", use_container_width=True)
     with col2:
         st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
