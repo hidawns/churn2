@@ -14,7 +14,7 @@ def show():
         st.markdown("\n\n")
         st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
-            "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan **churn** menggunakan model XGBoost "
+            "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan churn menggunakan model **XGBoost** "
             "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**.")
         st.markdown(" ")
         if st.button("Pergi ke Halaman Prediksi"):
