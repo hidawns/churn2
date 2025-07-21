@@ -24,23 +24,13 @@ def show():
         with col2:
             st.info(f"**Jumlah Kolom**\n\n{total_columns}")
         with col3:
-            st.info(f"**Jumlah Kolom Fitur**\n\n{feature_cols}")
+            st.info(f"**Fitur**\n\n{feature_cols}")
         with col4:
-            st.info(f"**Jumlah Kolom Target**\n\n{target_count}")
+            st.info(f"**Target**\n\n{target_count}")
 
     # === Sampel Dataset ===
     with st.expander("📄 Sampel Data (Top 5 Baris)"):
         st.dataframe(df.head(), use_container_width=True)
-
-    # === Dataset Info ===
-    with st.expander("📁 Gambaran Umum Dataset", expanded=True):
-        col1, col2 = st.columns(2)
-        with col1:
-            st.metric("Jumlah Baris", df.shape[0])
-            st.metric("Jumlah Kolom", df.shape[1])
-        with col2:
-            st.markdown("**Contoh Data (Top 5):**")
-            st.dataframe(df.head(), use_container_width=True)
 
     # === Informasi Struktur Data ===
     with st.expander("🔎 Struktur & Tipe Data"):
