@@ -19,5 +19,5 @@ def show():
         st.markdown(" ")
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
-            st.experimental_rerun()
+            st.rerun()
     st.markdown("---")
