@@ -4,8 +4,8 @@ from PIL import Image
 def show():
     st.title("Optimalisasi XGBoost dengan SMOTE-ENN dan GridSearchCV")
     st.markdown("### by [Nama Kamu]")
-
-    st.image("assets/churn_image.jpg")
+    image_path = "assets/churn_image.jpg"
+    st.image(image_path, use_container_width=True)
     st.caption("Customer Retention Illustration")
 
 
