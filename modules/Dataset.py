@@ -44,19 +44,3 @@ def show():
     # === Deskripsi Statistik Numerik ===
     with st.expander("📈 Deskripsi Statistik (Numerik)"):
         st.dataframe(df.describe(), use_container_width=True)
-
-    # === Distribusi Data Kosong ===
-    with st.expander("⚠️ Cek Missing Values"):
-        null_counts = df.isnull().sum()
-        null_df = pd.DataFrame({
-            'Fitur': null_counts.index,
-            'Jumlah Missing': null_counts.values,
-            'Persentase (%)': (null_counts.values / len(df) * 100).round(2)
-        })
-        null_df = null_df[null_df['Jumlah Missing'] > 0].reset_index(drop=True)
-
-        if null_df.empty:
-            st.success("✅ Tidak ada nilai kosong di dataset.")
-        else:
-            st.warning("🚨 Terdapat nilai kosong:")
-            st.dataframe(null_df, use_container_width=True)
