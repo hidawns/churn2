@@ -12,7 +12,7 @@ def show():
         st.image("assets/churn_image.jpg", use_container_width=True)
     with col2:
         st.markdown("\n\n")
-        st.markdown("###🎯 Tujuan Aplikasi")
+        st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan **churn** menggunakan model XGBoost "
             "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**.")
