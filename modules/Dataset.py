@@ -17,13 +17,21 @@ def show():
         total_columns = df.shape[1]
         target_col = 'Churn'
         feature_cols = df.drop(columns=[target_col]).shape[1] if target_col in df.columns else total_columns
-        target_count = 1 if target_col in df.columns else 0
+        target_present = 1 if target_col in df.columns else 0
 
-        st.info(f"""
-        **📌 Jumlah Baris:** {total_rows}  
-        **📌 Jumlah Kolom:** {total_columns}  
-        **📌 Kolom Fitur:** {feature_cols}  
-        **📌 Kolom Target:** {target_count} """)
+        col1, col2, col3, col4 = st.columns(4)
+        with col1:
+            with st.container():
+                st.metric("Jumlah Baris", total_rows
+        with col2:
+            with st.container():
+                st.metric("Jumlah Kolom", total_columns)
+        with col3:
+            with st.container():
+                st.metric("Kolom Fitur", feature_cols)
+        with col4:
+            with st.container():
+                st.metric("Kolom Target", target_present)
 
     # === Sampel Dataset ===
     with st.expander("📄 Sampel Data (Top 5 Baris)"):
