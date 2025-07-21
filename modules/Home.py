@@ -7,7 +7,7 @@ def show():
 
     st.markdown("---")
 
-    col1, col2 = st.columns([2, 1])
+    col1, col2 = st.columns([3, 1])
     with col1: 
         st.markdown("\n\n")
         st.markdown("### 🎯 Tujuan Aplikasi")
