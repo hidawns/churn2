@@ -15,14 +15,15 @@ def show():
         st.info(
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan **churn** menggunakan model XGBoost "
             "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**."
+        st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
+        if st.button("Pergi ke Halaman Prediksi"):
+            st.session_state.page = "Inference"
+            st.experimental_rerun()
         )
 
     st.markdown("---")
 
-    
-    left, center, right = st.columns([1, 2, 1])
-    with center:
-        st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
-        if st.button("🚀 Pergi ke Halaman Prediksi"):
-            st.session_state.page = "Inference"
-            st.experimental_rerun()
+    st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
+    if st.button("Pergi ke Halaman Prediksi"):
+        st.session_state.page = "Inference"
+        st.experimental_rerun()
