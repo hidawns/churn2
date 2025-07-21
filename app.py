@@ -5,23 +5,36 @@ import modules.Dataset as Dataset
 import modules.EDA as EDA
 import modules.Inference as Inference
 
-# Sidebar untuk navigasi
-st.sidebar.title("📌 Navigasi")
-page = st.sidebar.radio("Pilih halaman:", ["🏠 Home", "📖 Overview", "📊 Dataset", "📈 EDA", "🔍 Inference"])
+st.set_page_config(layout="wide")  # biar tampilannya dashboard-style
 
-# Simpan state halaman agar bisa diarahkan dari tombol
-if 'page' in st.session_state:
-    page = st.session_state.page
-    del st.session_state.page
+# Sidebar sebagai menu navigasi
+with st.sidebar:
+    st.markdown("## 📌 Navigasi")
+    st.markdown("---")
 
-# Routing ke halaman sesuai pilihan
-if page == "🏠 Home":
+    if st.button("🏠 Home"):
+        st.session_state.page = "Home"
+    if st.button("📖 Overview"):
+        st.session_state.page = "Overview"
+    if st.button("📊 Dataset"):
+        st.session_state.page = "Dataset"
+    if st.button("📈 EDA"):
+        st.session_state.page = "EDA"
+    if st.button("🔍 Inference"):
+        st.session_state.page = "Inference"
+
+# Halaman default
+if "page" not in st.session_state:
+    st.session_state.page = "Home"
+
+# Routing ke halaman sesuai state
+if st.session_state.page == "Home":
     Home.show()
-elif page == "📖 Overview":
+elif st.session_state.page == "Overview":
     Overview.show()
-elif page == "📊 Dataset":
+elif st.session_state.page == "Dataset":
     Dataset.show()
-elif page == "📈 EDA":
+elif st.session_state.page == "EDA":
     EDA.show()
-elif page == "🔍 Inference":
+elif st.session_state.page == "Inference":
     Inference.show()
