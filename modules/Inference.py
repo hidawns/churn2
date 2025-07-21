@@ -28,9 +28,9 @@ def show():
         multiple_lines = st.selectbox("Multiple Lines", ['No', 'Yes', 'No phone service'])
         internet_service = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
         online_security = st.selectbox("Online Security", ['Yes', 'No', 'No internet service'])
-
-    with col2:
         online_backup = st.selectbox("Online Backup", ['Yes', 'No', 'No internet service'])
+        
+    with col2:
         device_protection = st.selectbox("Device Protection", ['Yes', 'No', 'No internet service'])
         tech_support = st.selectbox("Tech Support", ['Yes', 'No', 'No internet service'])
         streaming_tv = st.selectbox("Streaming TV", ['Yes', 'No', 'No internet service'])
