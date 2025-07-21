@@ -48,7 +48,7 @@ def show():
         fig1, axs1 = plt.subplots(1, 3, figsize=(18, 5))
         for i, col in enumerate(numeric_cols):
             sns.boxplot(data=df, x='Churn', y=col, ax=axs1[i], palette='pastel')
-            axs1[i].set_title(f'{col} vs Churn')
+            axs1[i].set_title(f'{col} vs Churn', fontweight='bold')
         st.pyplot(fig1)
 
         fig2, axs2 = plt.subplots(1, 3, figsize=(18, 6))
