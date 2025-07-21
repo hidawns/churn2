@@ -5,28 +5,23 @@ import pages.Dataset as Dataset
 import pages.EDA as EDA
 import pages.Inference as Inference
 
-st.set_page_config(
-    page_title="Customer Churn Classifier",
-    page_icon="🔍",
-    layout="wide"
-)
+# Sidebar untuk navigasi
+st.sidebar.title("📌 Navigasi")
+page = st.sidebar.radio("Pilih halaman:", ["🏠 Home", "📖 Overview", "📊 Dataset", "📈 EDA", "🔍 Inference"])
 
-st.sidebar.title("📂 Navigation")
-st.sidebar.markdown("Pilih halaman:")
-menu = st.sidebar.radio("", ["🏠 Home", "📖 Overview", "📊 Dataset", "📈 EDA", "🔍 Inference"])
+# Simpan state halaman agar bisa diarahkan dari tombol
+if 'page' in st.session_state:
+    page = st.session_state.page
+    del st.session_state.page
 
-if menu == "🏠 Home":
-    from pages import Home
+# Routing ke halaman sesuai pilihan
+if page == "🏠 Home":
     Home.show()
-elif menu == "📖 Overview":
-    from pages import Overview
+elif page == "📖 Overview":
     Overview.show()
-elif menu == "📊 Dataset":
-    from pages import Dataset
+elif page == "📊 Dataset":
     Dataset.show()
-elif menu == "📈 EDA":
-    from pages import EDA
+elif page == "📈 EDA":
     EDA.show()
-elif menu == "🔍 Inference":
-    from pages import Inference
+elif page == "🔍 Inference":
     Inference.show()
