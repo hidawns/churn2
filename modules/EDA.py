@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def show():
-    st.set_option('deprecation.showPyplotGlobalUse', False)
     st.title("📈 Exploratory Data Analysis (EDA)")
 
     df = pd.read_csv("IBM Churn.csv")
