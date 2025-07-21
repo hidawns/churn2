@@ -8,8 +8,8 @@ def show():
     st.markdown("---")
 
     col1, col2 = st.columns([1, 2])
-    with col1:
-        st.image("assets/churn_image.jpg", caption="Ilustrasi Customer Retention", use_column_width=True)
+    with col1: 
+        st.image("assets/churn_image.jpg", caption="Ilustrasi Customer Retention",use_container_width=True)
     with col2:
         st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
