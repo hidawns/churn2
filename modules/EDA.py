@@ -38,6 +38,7 @@ def show():
             axs[i].tick_params(axis='x', rotation=45)
         for j in range(len(categorical_cols), len(axs)):
             fig.delaxes(axs[j])
+        fig.tight_layout(h_pad=3)
         st.pyplot(fig)
 
     # === SECTION: Bivariate - Numerik vs Churn ===
@@ -68,6 +69,7 @@ def show():
             axs[i].tick_params(axis='x', rotation=45)
         for j in range(len(categorical_cols), len(axs)):
             fig.delaxes(axs[j])
+        fig.tight_layout(h_pad=3)
         st.pyplot(fig)
 
     # === SECTION: Korelasi Heatmap ===
