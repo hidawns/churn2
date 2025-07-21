@@ -1,9 +1,9 @@
 import streamlit as st
 
 def show():
-    st.title("📊 Churn Prediction Dashboard")
-    st.markdown("##### Optimalisasi XGBoost dengan SMOTE-ENN dan GridSearchCV")
-    st.write("Dikembangkan oleh: **[Nama Kamu]**")
+    st.title("Churn Prediction App")
+    st.markdown("##### Optimalisasi Model XGBoost Menggunakan Teknik Hybrid Resampling SMOTE-ENN dan Hyperparameter Tuning GridSearchCV dalam Prediksi Churn Pelanggan")
+    st.write("Dikembangkan oleh: Hidayati Tri Winasis")
 
     st.markdown("---")
 
@@ -19,7 +19,10 @@ def show():
 
     st.markdown("---")
 
-    st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
-    if st.button("Pergi ke Halaman Prediksi"):
-        st.session_state.page = "Inference"
-        st.experimental_rerun()
+    
+    left, center, right = st.columns([1, 2, 1])
+    with center:
+        st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
+        if st.button("🚀 Pergi ke Halaman Prediksi"):
+            st.session_state.page = "Inference"
+            st.experimental_rerun()
