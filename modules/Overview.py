@@ -39,7 +39,7 @@ def show():
 
     # SECTION 4 - Peran Machine Learning
     st.markdown("### 🤖 Bagaimana Machine Learning Membantu?")
-    st.warning("""
+    st.info("""
 Dengan data historis pelanggan, kita dapat:
 - Memprediksi siapa saja yang berisiko churn.
 - Menggunakan algoritma seperti **XGBoost** yang kuat dalam klasifikasi.
