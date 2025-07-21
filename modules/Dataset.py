@@ -23,13 +23,12 @@ def show():
 
     # === Informasi Struktur Data ===
     with st.expander("🔎 Struktur & Tipe Data"):
-    # Buat tabel info dari df
-    info_df = pd.DataFrame({
-        'Kolom': df.columns,
-        'Tipe Data': df.dtypes.astype(str),
-        'Non-Null Count': df.notnull().sum()
-    }).reset_index(drop=True)
-    st.dataframe(info_df, use_container_width=True)
+        info_df = pd.DataFrame({
+            'Kolom': df.columns,
+            'Tipe Data': df.dtypes.astype(str),
+            'Non-Null Count': df.notnull().sum()
+        }).reset_index(drop=True)
+        st.dataframe(info_df, use_container_width=True)
 
     # === Deskripsi Statistik Numerik ===
     with st.expander("📈 Deskripsi Statistik (Numerik)"):
