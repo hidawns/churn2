@@ -21,7 +21,7 @@ def show():
         numeric_cols = ['tenure', 'MonthlyCharges', 'TotalCharges']
         fig, axs = plt.subplots(1, 3, figsize=(18, 5))
         for i, col in enumerate(numeric_cols):
-            sns.histplot(data=df, x=col, kde=True, ax=axs[i], color="#69b3a2")
+            sns.histplot(data=df, x=col, kde=True, ax=axs[i])
             axs[i].set_title(f'Distribusi {col}')
         st.pyplot(fig)
 
@@ -33,7 +33,7 @@ def show():
         fig, axs = plt.subplots(6, 3, figsize=(18, 30))
         axs = axs.ravel()
         for i, col in enumerate(categorical_cols):
-            sns.countplot(data=df, x=col, ax=axs[i], color="#3399ff")
+            sns.countplot(data=df, x=col, ax=axs[i])
             axs[i].set_title(f'{col}', fontweight='bold')
             axs[i].tick_params(axis='x', rotation=45)
         for j in range(len(categorical_cols), len(axs)):
