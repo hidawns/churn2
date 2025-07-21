@@ -14,12 +14,12 @@ def show():
         st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan **churn** menggunakan model XGBoost "
-            "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**."
+            "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**.")
+            
         st.markdown("### 🔍 Ingin langsung mencoba prediksi?")
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
             st.experimental_rerun()
-        )
 
     st.markdown("---")
 
