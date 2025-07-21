@@ -81,6 +81,6 @@ def show():
         corr = df[numerical_columns].corr()
 
         plt.figure(figsize=(10, 6))
-        sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f", ax=ax)
+        sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
         plt.title("Heatmap Korelasi Variabel Numerik")
         st.pyplot(fig)
