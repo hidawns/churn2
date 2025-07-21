@@ -6,10 +6,7 @@ def show():
 
     # SECTION 1 - Penjelasan Konsep
     st.markdown("""**Customer churn** terjadi ketika pelanggan berhenti menggunakan layanan atau produk dari suatu perusahaan.
-    Ini adalah indikator penting dalam dunia bisnis, khususnya industri **berbasis langganan** seperti:
-    - 📱 Telekomunikasi
-    - 💳 Perbankan
-    - 💻 SaaS (Software as a Service)
+    Ini adalah indikator penting dalam dunia bisnis, khususnya industri **berbasis langganan** seperti Telekomunikasi, Perbankan, dan SaaS (Software as a Service)
     """)
 
     st.markdown("---")
@@ -29,11 +26,11 @@ def show():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.info("💡 **Loyalty Program**\n\nTawarkan insentif bagi pelanggan setia.")
+        st.info(" **Loyalty Program**\n\nTawarkan insentif bagi pelanggan setia.")
     with col2:
-        st.info("📞 **Intervensi Personal**\n\nHubungi pelanggan dengan pendekatan khusus.")
+        st.info(" **Intervensi Personal**\n\nHubungi pelanggan dengan pendekatan khusus.")
     with col3:
-        st.info("💰 **Diskon Khusus**\n\nBerikan penawaran kompetitif agar pelanggan tetap bertahan.")
+        st.info(" **Diskon Khusus**\n\nBerikan penawaran kompetitif agar pelanggan tetap bertahan.")
 
     st.markdown("---")
 
