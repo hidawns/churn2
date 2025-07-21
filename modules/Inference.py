@@ -87,6 +87,8 @@ def show():
         probability = model.predict_proba(input_df)[0][1]
 
         if prediction == 1:
-            st.error(f"❌ Customer likely to churn. Probability to churn: {probability:.2f}")
+            st.error(f"❌ **Pelanggan berpotensi churn**")
+            st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
         else:
-            st.success(f"✅ Customer likely to stay. Probability to churn: {probability:.2f}")
+            st.success(f"✅ **Pelanggan diprediksi akan tetap loyal**")
+            st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
