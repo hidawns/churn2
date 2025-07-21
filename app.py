@@ -9,7 +9,6 @@ st.set_page_config(page_title="Churn Prediction App", layout="wide", page_icon="
 
 # === Sidebar Navigasi ===
 with st.sidebar:
-    st.image("assets/churn_image.jpg", use_column_width=True)
     st.markdown("## Navigasi")
 
     # Navigasi menggunakan tombol biasa
