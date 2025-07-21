@@ -1,7 +1,7 @@
 import streamlit as st
 
 def show():
-    st.title("📖 Overview")
+    st.title("Overview")
     st.markdown("### Memahami *Customer Churn* dan Pentingnya Deteksi Dini")
 
     # SECTION 1 - Penjelasan Konsep
@@ -35,7 +35,7 @@ def show():
     st.markdown("---")
 
     # SECTION 4 - Peran Machine Learning
-    st.markdown("### 🤖 Bagaimana Machine Learning Membantu?")
+    st.markdown("### 📖 Bagaimana Machine Learning Membantu?")
     st.info("""
 Dengan data historis pelanggan, kita dapat:
 - Memprediksi siapa saja yang berisiko churn.
