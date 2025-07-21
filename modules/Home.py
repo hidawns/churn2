@@ -9,8 +9,6 @@ def show():
 
     col1, col2 = st.columns([1, 2])
     with col1: 
-        st.image("assets/churn_image.jpg", use_container_width=True)
-    with col2:
         st.markdown("\n\n")
         st.markdown("### 🎯 Tujuan Aplikasi")
         st.info(
@@ -20,4 +18,7 @@ def show():
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
             st.rerun()
+    with col2:
+        st.image("assets/churn_image.jpg", use_container_width=True)
+        
     st.markdown("---")
