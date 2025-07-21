@@ -1,4 +1,9 @@
 import streamlit as st
+import pages.Home as Home
+import pages.Overview as Overview
+import pages.Dataset as Dataset
+import pages.EDA as EDA
+import pages.Inference as Inference
 
 st.set_page_config(
     page_title="Customer Churn Classifier",
