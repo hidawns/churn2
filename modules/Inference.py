@@ -15,34 +15,34 @@ def show():
 
     with open("feature_columns.pkl", "rb") as f:
         feature_columns = pickle.load(f)
+        
+    # Split menjadi dua kolom
+    col1, col2 = st.columns(2)
+    with col1:
+        gender = st.selectbox("Gender", ['Female', 'Male'])
+        senior_citizen = st.selectbox("Is Senior Citizen?", ['Yes', 'No'])
+        partner = st.selectbox("Has Partner?", ['Yes', 'No'])
+        dependents = st.selectbox("Has Dependents?", ['Yes', 'No'])
+        phone_service = st.selectbox("Has Phone Service?", ['Yes', 'No'])
+        paperless_billing = st.selectbox("Uses Paperless Billing?", ['Yes', 'No'])
+        multiple_lines = st.selectbox("Multiple Lines", ['No', 'Yes', 'No phone service'])
+        internet_service = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
+        online_security = st.selectbox("Online Security", ['Yes', 'No', 'No internet service'])
+        online_backup = st.selectbox("Online Backup", ['Yes', 'No', 'No internet service'])
 
-    # === Input: Binary Features ===
-    gender = st.selectbox("Gender", ['Female', 'Male'])
-    senior_citizen = st.selectbox("Is Senior Citizen?", ['Yes', 'No'])
-    partner = st.selectbox("Has Partner?", ['Yes', 'No'])
-    dependents = st.selectbox("Has Dependents?", ['Yes', 'No'])
-    phone_service = st.selectbox("Has Phone Service?", ['Yes', 'No'])
-    paperless_billing = st.selectbox("Uses Paperless Billing?", ['Yes', 'No'])
+    with col2:
+        device_protection = st.selectbox("Device Protection", ['Yes', 'No', 'No internet service'])
+        tech_support = st.selectbox("Tech Support", ['Yes', 'No', 'No internet service'])
+        streaming_tv = st.selectbox("Streaming TV", ['Yes', 'No', 'No internet service'])
+        streaming_movies = st.selectbox("Streaming Movies", ['Yes', 'No', 'No internet service'])
+        contract = st.selectbox("Contract", ['Month-to-month', 'One year', 'Two year'])
+        payment_method = st.selectbox("Payment Method", [
+            'Electronic check', 'Mailed check', 
+            'Bank transfer (automatic)', 'Credit card (automatic)' ])
+        tenure = st.number_input("Tenure (months)", min_value=0)
+        monthly_charges = st.number_input("Monthly Charges", min_value=0.0)
+        total_charges = st.number_input("Total Charges", min_value=0.0)
 
-    # === Input: Multi-category ===
-    multiple_lines = st.selectbox("Multiple Lines", ['No', 'Yes', 'No phone service'])
-    internet_service = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
-    online_security = st.selectbox("Online Security", ['Yes', 'No', 'No internet service'])
-    online_backup = st.selectbox("Online Backup", ['Yes', 'No', 'No internet service'])
-    device_protection = st.selectbox("Device Protection", ['Yes', 'No', 'No internet service'])
-    tech_support = st.selectbox("Tech Support", ['Yes', 'No', 'No internet service'])
-    streaming_tv = st.selectbox("Streaming TV", ['Yes', 'No', 'No internet service'])
-    streaming_movies = st.selectbox("Streaming Movies", ['Yes', 'No', 'No internet service'])
-    contract = st.selectbox("Contract", ['Month-to-month', 'One year', 'Two year'])
-    payment_method = st.selectbox("Payment Method", [
-        'Electronic check', 'Mailed check', 
-        'Bank transfer (automatic)', 'Credit card (automatic)'
-    ])
-
-    # === Input: Numeric Features ===
-    tenure = st.number_input("Tenure (months)", min_value=0)
-    monthly_charges = st.number_input("Monthly Charges", min_value=0.0)
-    total_charges = st.number_input("Total Charges", min_value=0.0)
 
     # === Build input dict ===
     input_dict = {
