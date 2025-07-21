@@ -11,6 +11,22 @@ def show():
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
     df['SeniorCitizen'] = df['SeniorCitizen'].map({0: 'No', 1: 'Yes'}).astype('object')
 
+    # === Statistik Dataset ===
+    with st.expander("📊 Statistik Dataset", expanded=True):
+        total_rows = df.shape[0]
+        total_columns = df.shape[1]
+        target_col = 'Churn'
+        feature_cols = df.drop(columns=[target_col]).shape[1] if target_col in df.columns else total_columns
+        col1, col2, col3, col4 = st.columns(4)
+        col1.metric("Jumlah Baris", total_rows)
+        col2.metric("Jumlah Kolom", total_columns)
+        col3.metric("Fitur", feature_cols)
+        col4.metric("Target", 1 if target_col in df.columns else 0)
+
+    # === Sampel Dataset ===
+    with st.expander("📄 Sampel Data (Top 5 Baris)"):
+        st.dataframe(df.head(), use_container_width=True)
+
     # === Dataset Info ===
     with st.expander("📁 Gambaran Umum Dataset", expanded=True):
         col1, col2 = st.columns(2)
