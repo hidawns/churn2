@@ -1,11 +1,11 @@
-st.set_page_config(page_title="Churn App", layout="wide")
-
 import streamlit as st
 import modules.Home as Home
 import modules.Overview as Overview
 import modules.Dataset as Dataset
 import modules.EDA as EDA
 import modules.Inference as Inference
+
+st.set_page_config(page_title="Churn App", layout="wide")
 
 # === Sidebar Navigasi Custom ===
 st.sidebar.markdown("## 📌 Navigasi")
