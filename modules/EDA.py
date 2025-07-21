@@ -80,7 +80,7 @@ def show():
         numerical_columns = df.select_dtypes(include=['int64', 'float64']).columns
         corr = df[numerical_columns].corr()
 
-        plt.figure(figsize=(10, 6))
-        sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
-        plt.title("Heatmap Korelasi Variabel Numerik")
+        fig, ax = plt.subplots(figsize=(10, 6))
+        sns.heatmap(corr, annot=True, cmap='coolwarm', ax=ax)
+        ax.set_title('Heatmap Korelasi Variabel Numerik')
         st.pyplot(fig)
