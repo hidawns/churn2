@@ -5,26 +5,29 @@ import modules.Dataset as Dataset
 import modules.EDA as EDA
 import modules.Inference as Inference
 
-st.set_page_config(page_title="Churn App", layout="wide")
+st.set_page_config(page_title="Churn Prediction App", layout="wide", page_icon="📊")
 
-# === Sidebar Navigasi Custom ===
-st.sidebar.markdown("## 📌 Navigasi")
+# === Sidebar Navigasi ===
+with st.sidebar:
+    st.image("assets/churn_image.jpg", use_column_width=True)
+    st.markdown("### 📌 Navigasi")
+    
+    nav_options = {
+        "🏠 Home": "Home",
+        "📖 Overview": "Overview",
+        "📊 Dataset": "Dataset",
+        "📈 EDA": "EDA",
+        "🔍 Prediksi": "Inference"
+    }
 
-# Atur halaman yang aktif di session_state
-if 'page' not in st.session_state:
-    st.session_state.page = "Home"
+    # Navigasi dengan radio
+    selected = st.radio("Pilih Halaman", list(nav_options.keys()))
 
-# Tombol navigasi
-if st.sidebar.button("🏠 Home"):
-    st.session_state.page = "Home"
-if st.sidebar.button("📖 Overview"):
-    st.session_state.page = "Overview"
-if st.sidebar.button("📊 Dataset"):
-    st.session_state.page = "Dataset"
-if st.sidebar.button("📈 EDA"):
-    st.session_state.page = "EDA"
-if st.sidebar.button("🔍 Inference"):
-    st.session_state.page = "Inference"
+    # Simpan state
+    st.session_state.page = nav_options[selected]
+
+    st.markdown("---")
+    st.caption("© 2025 | Churn Prediction App")
 
 # === Routing Halaman ===
 page = st.session_state.page
@@ -38,5 +41,3 @@ elif page == "EDA":
     EDA.show()
 elif page == "Inference":
     Inference.show()
-st.sidebar.markdown("---")
-st.sidebar.caption("© 2025 Churn Prediction App")
