@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def show():
+    sns.set_theme(style="whitegrid", palette="pastel")
     st.title("📈 Exploratory Data Analysis (EDA)")
 
     df = pd.read_csv("IBM Churn.csv")
@@ -51,7 +52,7 @@ def show():
 
         fig2, axs2 = plt.subplots(1, 3, figsize=(18, 6))
         for i, col in enumerate(numeric_cols):
-            sns.violinplot(data=df, x='Churn', y=col, ax=axs2[i], palette='Set2')
+            sns.violinplot(data=df, x='Churn', y=col, ax=axs2[i], palette='pastel')
             axs2[i].set_title(f'{col} vs Churn', fontweight='bold')
         st.pyplot(fig2)
 
