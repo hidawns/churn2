@@ -29,11 +29,11 @@ def show():
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.success("💡 **Loyalty Program**\n\nTawarkan insentif bagi pelanggan setia.")
+        st.info("💡 **Loyalty Program**\n\nTawarkan insentif bagi pelanggan setia.")
     with col2:
-        st.success("📞 **Intervensi Personal**\n\nHubungi pelanggan dengan pendekatan khusus.")
+        st.info("📞 **Intervensi Personal**\n\nHubungi pelanggan dengan pendekatan khusus.")
     with col3:
-        st.success("💰 **Diskon Khusus**\n\nBerikan penawaran kompetitif agar pelanggan tetap bertahan.")
+        st.info("💰 **Diskon Khusus**\n\nBerikan penawaran kompetitif agar pelanggan tetap bertahan.")
 
     st.markdown("---")
 
