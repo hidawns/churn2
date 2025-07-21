@@ -24,10 +24,12 @@ def show():
 
     # === Informasi Struktur Data ===
     with st.expander("🔎 Struktur & Tipe Data"):
-        buffer = []
+        import io
+        buffer = io.StringIO()
         df.info(buf=buffer)
-        s = "\n".join(buffer)
+        s = buffer.getvalue()
         st.code(s)
+
 
     # === Deskripsi Statistik Numerik ===
     with st.expander("📈 Deskripsi Statistik (Numerik)"):
