@@ -14,13 +14,13 @@ def show():
 
     # SECTION 2 - Tindakan Preventif
     st.markdown("---")
-    st.markdown("### Penyebab churn pelangganAAAAAAA")
+    st.markdown("### Penyebab churn pelanggan")
     col1, col2, col3 = st.columns(3)
 
     with col1:
         st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan, serta masalah teknis yang dialami.")
     with col2:
-        st.info(" **Harga Tidak Kompetitif**\n\nKetidaksesuaian antara harga dan kualitas layanan yang diterima.")
+        st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
     with col3:
         st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
 
