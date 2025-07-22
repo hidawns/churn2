@@ -26,7 +26,7 @@ def show():
             line-height: 1.5;
         '>
             <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Harga Tidak Kompetitif</div>
-            <div style='text-align: justify;'>Harga yang tidak bersaing membuat pelanggan mencari alternatif dengan penawaran lebih baik.</div>
+            <div style='text-align: justify;'>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -40,7 +40,7 @@ def show():
             line-height: 1.5;
         '>
             <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
-            <div style='text-align: justify;'>Pengalaman negatif, seperti gangguan layanan atau support lambat, dapat mendorong pelanggan meninggalkan layanan.</div>
+            <div style='text-align: justify;'>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</div>
         </div>
         """, unsafe_allow_html=True)
 
@@ -54,7 +54,7 @@ def show():
             line-height: 1.5;
         '>
             <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Tidak Memenuhi Kebutuhan</div>
-            <div style='text-align: justify;'>Layanan yang tidak relevan dengan kebutuhan atau harapan pelanggan dapat memicu keputusan untuk churn.</div>
+            <div style='text-align: justify;'>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</div>
         </div>
         """, unsafe_allow_html=True)
 
