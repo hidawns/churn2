@@ -41,7 +41,7 @@ def show():
             line-height: 1.4;
             text-align: justify;
             <p style='text-align: center; margin-top: 0; font-weight: bold;'>Kualitas Layanan Buruk</p>
-            <p>Kualitas layanan yang tidak memuaskan mendorong pelanggan untuk melakukan churn.</p>
+            <p>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</p>
         </div>
         """, unsafe_allow_html=True)
 
