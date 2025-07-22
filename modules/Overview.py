@@ -9,7 +9,7 @@ def show():
     st.markdown("""
 - **Customer churn** adalah kondisi dimana seorang pelanggan berhenti menggunakan layanan dari suatu perusahaan, dan beralih menggunakan layanan dari perusahaan lain.
 - Churn merupakan tantangan utama yang kerap dihadapi oleh industri telekomunikasi dengan kondisi pasar yang dipenuhi persaingan antar penyedia layanan.
-- Churn dapat disebabkan pengalaman pelanggan yang tidak memuaskan, harga yang tidak kompetitif, kualitas produk yang buruk, serta ketidaksesuaian layanan yang ditawarkan terhadap kebutuhan pelanggan.  
+#- Churn dapat disebabkan pengalaman pelanggan yang tidak memuaskan, harga yang tidak kompetitif, kualitas produk yang buruk, serta ketidaksesuaian layanan yang ditawarkan terhadap kebutuhan pelanggan.  
 """)
 
     # SECTION 2 - Penyebab churn
@@ -26,7 +26,7 @@ def show():
             line-height: 1.5;
         '>
             <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Harga Tidak Kompetitif</div>
-            <div style='text-align: left;'>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</div>
+            <div style='text-align: center;'>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</div>
         </div>
         """, unsafe_allow_html=True)
 
