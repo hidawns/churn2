@@ -14,7 +14,7 @@ def show():
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost**"
             "yang dioptimalkan dengan teknik resampling **SMOTE-ENN** serta hyperparameter tuning **GridSearchCV**.")
         
-        st.info("""
+        st.markdown("""
         <div style='text-align: justify'>
         Aplikasi ini membantu mengidentifikasi pelanggan yang berpotensi churn menggunakan data historis dan machine learning. 
         Dirancang untuk analisis data, visualisasi, dan prediksi churn secara interaktif.
