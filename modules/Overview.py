@@ -41,7 +41,7 @@ def show():
             line-height: 1.4;
             text-align: justify;
             <p style='text-align: center; margin-top: 0; font-weight: bold;'>Kualitas Layanan Buruk</p>
-            <p>Kualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.</p>
+            <p>Kualitas layanan yang tidak memuaskan mendorong pelanggan untuk melakukan churn.</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -63,7 +63,7 @@ def show():
     #with col1:
         #st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
     #with col2:
-        st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.")
+        #st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.")
     #with col3:
         #st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
 
