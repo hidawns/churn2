@@ -22,8 +22,8 @@ def show():
             color: #004280;
             line-height: 1.4;
             text-align: justify'>
-        Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost** 
-        yang dioptimalkan dengan teknik resampling **SMOTE-ENN** serta hyperparameter tuning **GridSearchCV**.
+        Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma <b>XGBoost</b> 
+        yang dioptimalkan dengan teknik resampling <b>SMOTE-ENN</b> serta hyperparameter tuning <b>GridSearchCV</b>.
         </div>
         """, unsafe_allow_html=True)
 
