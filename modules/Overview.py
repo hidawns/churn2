@@ -4,7 +4,7 @@ def show():
     st.title("Mengenal Customer Churn")
 
     # SECTION 1 - Penjelasan Churn
-    st.markdown("---")
+    #st.markdown("---")
     st.markdown("### Apa itu customer churn?")
     st.markdown("""
 - **Customer churn** adalah kondisi dimana seorang pelanggan berhenti menggunakan layanan dari suatu perusahaan, dan beralih menggunakan layanan dari perusahaan lain.
