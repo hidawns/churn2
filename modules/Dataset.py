@@ -7,9 +7,9 @@ import io
 def show():
     st.title("📊 Dataset: IBM Telco Customer Churn")
     # === Deskripsi Dataset ===
-    st.markdown("Dataset yang digunakan pada penelitian ini adalah IBM Telco Customer Churn yang disediakan oleh IBM Congnos Analytics (2019). 
+    st.markdown("""Dataset yang digunakan pada penelitian ini adalah IBM Telco Customer Churn yang disediakan oleh IBM Congnos Analytics (2019). 
     Dataset ini telah digunakan secara luas dalam penelitian terkait prediksi churn di industri telekomunikasi dan bersifat open source sehingga dapat diakses secara terbuka oleh publik. 
-    Dataset ini terdiri dari 7043 observasi dengan 21 fitur yang memuat informasi pelanggan dari perusahaan telekomunikasi yang mencakup data demografi, jenis layanan yang digunakan, metode pembayaran, dan status churn pelanggan.")
+    Dataset ini terdiri dari 7043 observasi dengan 21 fitur yang memuat informasi pelanggan dari perusahaan telekomunikasi yang mencakup data demografi, jenis layanan yang digunakan, metode pembayaran, dan status churn pelanggan.""")
     
     df = pd.read_csv("IBM Churn.csv")
     df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
