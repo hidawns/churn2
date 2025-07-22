@@ -4,7 +4,8 @@ import numpy as np
 import pickle
 
 def show():
-    st.title("🔍 Churn Prediction (Inference)")
+    st.title("🔍 Prediksi Churn Pelanggan")
+    st.markdown("Lengkapi formulir di bawah ini untuk mengetahui hasil prediksi churn pelanggan.")
 
     # === Load saved model and scaler ===
     with open("final_churn_model.pkl", "rb") as f:
@@ -87,8 +88,21 @@ def show():
         probability = model.predict_proba(input_df)[0][1]
 
         if prediction == 1:
-            st.error(f"❌ **Pelanggan berpotensi churn**")
+            st.error(f"❌ **Pelanggan tersebut berpotensi untuk churn.**")
             st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
+            st.info("""
+            **Tindakan yang direkomendasikan:**
+            - Lakukan pendekatan untuk memahami kebutuhan serta ketidakpuasan pelanggan.
+            - Pertimbangkan untuk menawarkan benefit seperti diskon eksklusif maupun upgrade layanan.
+            - Tinjau kembali riwayat langganan pelanggan untuk mengidentifikasi gangguan atau masalah pada layanan.
+            """)
         else:
-            st.success(f"✅ **Pelanggan diprediksi akan tetap loyal**")
+            st.success(f"✅ **Pelanggan tersebut diprediksi akan tetap loyal (non-churn).**")
             st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
+            st.markdown("""
+            **Insight:**
+            - Pelanggan tersebut tidak menunjukkan kecenderungan untuk churn.
+            - Pertahankan loyalitas pelanggan tersebut dengan memberi reward maupun penawaran yang menarik.
+            - Terus berikan pengalaman layanan yang konsisten dan memuaskan pada pelanggan yang loyal.
+            """)
+            
