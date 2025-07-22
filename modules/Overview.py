@@ -57,74 +57,20 @@ def show():
         </div>
         """, unsafe_allow_html=True)
 
-    
-    '''
-    with col1:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-            text-align: justify;
-            <p style='text-align: center; margin-top: 0;'><strong>Harga Tidak Kompetitif</p>
-            <p>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</p>
-            
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-            text-align: justify;
-            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Kualitas Layanan Buruk</p>
-            <p>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</p>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-            text-align: justify;
-            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Tidak Memenuhi Kebutuhan</p>
-            <p>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</p>
-        </div>
-        """, unsafe_allow_html=True)
-'''
-    
-    
-    #with col1:
-        #st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
-    #with col2:
-        #st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.")
-    #with col3:
-        #st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
-
     st.markdown("---")
 
-    # SECTION 2 - Mengapa Deteksi Churn Penting?
-    st.markdown("### 🚨 Mengapa Harus Peduli dengan Churn?")
-    st.info("""
-- Kehilangan pelanggan artinya kehilangan pendapatan tetap.
-- Biaya mencari pelanggan baru **5x lebih mahal** daripada mempertahankan pelanggan lama.
-- Deteksi churn lebih awal memberi kesempatan melakukan intervensi.
+    # SECTION 2 - Dampak Churn
+    st.markdown("### Dampak churn pelanggan")
+    st.markdown("""
+- Tingginya tingkat churn pelanggan dapat menyebabkan penurunan pendapatan perusahaan secara signifikan.
+- Perusahaan juga harus mengeluarkan biaya yang lebih besar untuk dapat mengakuisisi pelanggan baru.
+- Upaya mengakuisisi pelanggan baru umumnya memakan biaya yang jauh lebih besar, yakni 5-10 kali lipat lebih mahal dibandingkan mempertahankan pelanggan yang sudah ada.
 """)
 
     st.markdown("---")
 
-    # SECTION 4 - Peran Machine Learning
-    st.markdown("### 📖 Bagaimana Machine Learning Membantu?")
+    # SECTION 4 - Manfaat prediksi churn
+    st.markdown("### Manfaat prediksi churn")
     st.info("""
 Dengan data historis pelanggan, kita dapat:
 - Memprediksi siapa saja yang berisiko churn.
