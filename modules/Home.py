@@ -20,10 +20,10 @@ def show():
             padding: 16px;
             border-radius: 6px;
             color: #004280;
-            line-height: 1.2;
+            line-height: 1.4;
             text-align: justify'>
-        Aplikasi ini membantu mengidentifikasi pelanggan yang berpotensi churn menggunakan data historis dan machine learning. 
-        Dirancang untuk analisis data, visualisasi, dan prediksi churn secara interaktif.
+        Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost** 
+        yang dioptimalkan dengan teknik resampling **SMOTE-ENN** serta hyperparameter tuning **GridSearchCV**.
         </div>
         """, unsafe_allow_html=True)
 
