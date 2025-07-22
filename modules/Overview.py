@@ -26,8 +26,7 @@ def show():
             color: #004280;
             line-height: 1.4;
             text-align: justify;
-            border-left: 5px solid #91c3f9;'>
-            <h4 style='text-align: center; margin-top: 0;'>Harga Tidak Kompetitif</h4>
+            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Harga Tidak Kompetitif</p>
             <p>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -41,8 +40,7 @@ def show():
             color: #004280;
             line-height: 1.4;
             text-align: justify;
-            border-left: 5px solid #91c3f9;'>
-            <h4 style='text-align: center; margin-top: 0;'>Kualitas Layanan Buruk</h4>
+            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Kualitas Layanan Buruk</p>
             <p>Kualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.</p>
         </div>
         """, unsafe_allow_html=True)
@@ -56,8 +54,7 @@ def show():
             color: #004280;
             line-height: 1.4;
             text-align: justify;
-            border-left: 5px solid #91c3f9;'>
-            <h4 style='text-align: center; margin-top: 0;'>Tidak Memenuhi Kebutuhan</h4>
+            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Tidak Memenuhi Kebutuhan</p>
             <p>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</p>
         </div>
         """, unsafe_allow_html=True)
