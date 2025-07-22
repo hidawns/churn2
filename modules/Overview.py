@@ -11,54 +11,6 @@ def show():
 - Churn merupakan tantangan utama yang kerap dihadapi oleh industri telekomunikasi dengan kondisi pasar yang dipenuhi persaingan antar penyedia layanan.
 """)
 
-
-'''
-    # SECTION 2 - Penyebab churn
-    st.markdown("---")
-    st.markdown("### Penyebab Churn Pelanggan")
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-        '>
-            <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Harga Tidak Kompetitif</div>
-            <div style='text-align: justify;'>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</div>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col2:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-        '>
-            <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
-            <div style='text-align: justify;'>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</div>
-        </div>
-        """, unsafe_allow_html=True)
-
-    with col3:
-        st.markdown("""
-        <div style='
-            background-color: #e8f2fc;
-            padding: 16px;
-            border-radius: 6px;
-            color: #004280;
-            line-height: 1.4;
-        '>
-            <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Tidak Memenuhi Kebutuhan</div>
-            <div style='text-align: justify;'>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</div>
-        </div>
-        """, unsafe_allow_html=True)
-'''
     # SECTION 2 - Penyebab churn
     st.markdown("---")
     st.markdown("### Penyebab Churn Pelanggan")
