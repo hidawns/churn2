@@ -13,6 +13,15 @@ def show():
         st.info(
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost**"
             "yang dioptimalkan dengan teknik resampling **SMOTE-ENN** serta hyperparameter tuning **GridSearchCV**.")
+        
+        st.info("""
+        <div style='text-align: justify'>
+        Aplikasi ini membantu mengidentifikasi pelanggan yang berpotensi churn menggunakan data historis dan machine learning. 
+        Dirancang untuk analisis data, visualisasi, dan prediksi churn secara interaktif.
+        </div>
+        """, unsafe_allow_html=True)
+
+        
         st.markdown(" ")
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
