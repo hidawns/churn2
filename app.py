@@ -12,15 +12,15 @@ with st.sidebar:
     st.markdown("## Navigasi")
 
     # Navigasi menggunakan tombol biasa
-    if st.button("🏠 Home"):
+    if st.button("▷ Home"):
         st.session_state.page = "Home"
-    if st.button("📖 Churn Overview"):
+    if st.button("▷ Churn Overview"):
         st.session_state.page = "Overview"
-    if st.button("📊 Dataset"):
+    if st.button("▷ Dataset"):
         st.session_state.page = "Dataset"
-    if st.button("📈 EDA"):
+    if st.button("▷ EDA"):
         st.session_state.page = "EDA"
-    if st.button("🔍 Inference"):
+    if st.button("▷ Inference"):
         st.session_state.page = "Inference"
 
     st.markdown("---")
