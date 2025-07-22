@@ -1,12 +1,14 @@
 import streamlit as st
 
 def show():
-    st.title("Overview")
-    st.markdown("### Memahami *Customer Churn* dan Pentingnya Deteksi Dini")
+    st.title("Mengenal Customer Churn")
 
-    # SECTION 1 - Penjelasan Konsep
-    st.markdown("""**Customer churn** terjadi ketika pelanggan berhenti menggunakan layanan atau produk dari suatu perusahaan.
-    Ini adalah indikator penting dalam dunia bisnis, khususnya industri **berbasis langganan** seperti Telekomunikasi, Perbankan, dan SaaS (Software as a Service)
+    # SECTION 1 - Penjelasan Churn
+    st.markdown("---")
+    st.markdown("### Apa itu customer churn?")
+    st.markdown("""**Customer churn** adalah kondisi dimana seorang pelanggan berhenti menggunakan layanan dari suatu perusahaan, dan beralih menggunakan layanan dari perusahaan lain.
+    Churn merupakan tantangan utama yang kerap dihadapi oleh industri telekomunikasi dengan kondisi pasar yang dipenuhi persaingan antar penyedia layanan.
+    Churn dapat disebabkan pengalaman pelanggan yang tidak memuaskan, harga yang tidak kompetitif, kualitas produk yang buruk, serta ketidaksesuaian layanan yang ditawarkan terhadap kebutuhan pelanggan.  
     """)
 
     st.markdown("---")
