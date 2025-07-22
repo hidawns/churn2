@@ -90,8 +90,8 @@ def show():
 
         if prediction == 1:
             st.error(f"❌ **Pelanggan tersebut berpotensi untuk churn.**")
-            st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
-            st.info("""
+            #st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
+            st.error("""
             **Tindakan yang direkomendasikan:**
             - Lakukan pendekatan untuk memahami kebutuhan serta ketidakpuasan pelanggan.
             - Pertimbangkan untuk menawarkan benefit seperti diskon eksklusif maupun upgrade layanan.
@@ -99,8 +99,8 @@ def show():
             """)
         else:
             st.success(f"✅ **Pelanggan tersebut diprediksi akan tetap loyal (non-churn).**")
-            st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
-            st.info("""
+            #st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
+            st.success("""
             **Insight:**
             - Pelanggan tersebut tidak menunjukkan kecenderungan untuk churn.
             - Pertahankan loyalitas pelanggan tersebut dengan memberi reward maupun penawaran yang menarik.
