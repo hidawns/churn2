@@ -4,8 +4,8 @@ def show():
     st.title("Mengenal Customer Churn")
 
     # SECTION 1 - Penjelasan Churn
-    #st.markdown("---")
-    st.markdown("### Apa itu customer churn?")
+    st.markdown("\n\n")
+    st.markdown("### Apa Itu Customer Churn?")
     st.markdown("""
 - Customer churn adalah kondisi dimana seorang pelanggan berhenti menggunakan layanan dari suatu perusahaan, dan beralih menggunakan layanan dari perusahaan lain.
 - Churn merupakan tantangan utama yang kerap dihadapi oleh industri telekomunikasi dengan kondisi pasar yang dipenuhi persaingan antar penyedia layanan.
@@ -13,7 +13,7 @@ def show():
 
     # SECTION 2 - Penyebab churn
     st.markdown("---")
-    st.markdown("### Penyebab churn pelanggan")
+    st.markdown("### Penyebab Churn Pelanggan")
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("""
@@ -60,7 +60,7 @@ def show():
     st.markdown("---")
 
     # SECTION 2 - Dampak Churn
-    st.markdown("### Dampak churn pelanggan")
+    st.markdown("### Dampak Churn Pelanggan")
     st.markdown("""
 - Tingginya tingkat churn pelanggan dapat menyebabkan penurunan pendapatan perusahaan secara signifikan.
 - Perusahaan juga harus mengeluarkan biaya yang lebih besar untuk dapat mengakuisisi pelanggan baru.
@@ -71,9 +71,7 @@ def show():
 
     # SECTION 4 - Manfaat prediksi churn
     st.markdown("### Manfaat prediksi churn")
-    st.info("""
-Dengan data historis pelanggan, kita dapat:
-- Memprediksi siapa saja yang berisiko churn.
-- Menggunakan algoritma seperti **XGBoost** yang kuat dalam klasifikasi.
-- Mengoptimasi prediksi dengan **SMOTE-ENN** untuk menangani ketidakseimbangan data.
+    st.info("""Prediksi churn membantu perusahaan mengidentifikasi secara dini pelanggan yang berisiko berhenti menggunakan produk atau layanan. 
+    Dengan informasi ini, perusahaan dapat merancang strategi retensi yang lebih efektif untuk mempertahankan pelanggan yang dimiliki. 
+    Upaya ini berkontribusi untuk mengurangi biaya akuisisi pelanggan baru serta menjaga stabilitas bisnis perusahaan.
 """)
