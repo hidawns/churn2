@@ -16,11 +16,10 @@ def show():
         
         st.markdown("""
         <div style='
-            background-color: #e0f2fe;
+            background-color: #e8f2fc;
             padding: 16px;
-            border-left: 6px solid #2b8fe5;
             border-radius: 6px;
-            color: #000;
+            color: #004280;
             text-align: justify'>
         Aplikasi ini membantu mengidentifikasi pelanggan yang berpotensi churn menggunakan data historis dan machine learning. 
         Dirancang untuk analisis data, visualisasi, dan prediksi churn secara interaktif.
