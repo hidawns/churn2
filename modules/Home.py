@@ -5,7 +5,9 @@ def show():
     st.markdown("##### Optimalisasi Model XGBoost Menggunakan Teknik Hybrid Resampling SMOTE-ENN dan Hyperparameter Tuning GridSearchCV dalam Prediksi Churn Pelanggan")
     st.write("Dikembangkan oleh: Hidayati Tri Winasis")
 
-    st.markdown("---")       
+    st.markdown("---")  
+    col1, col2 = st.columns([3, 1])
+    with col1: 
         st.markdown("""
         <div style='
             background-color: #e8f2fc;
