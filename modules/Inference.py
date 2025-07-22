@@ -83,7 +83,7 @@ def show():
     input_df[numeric_cols] = scaler.transform(input_df[numeric_cols])
 
     # === Predict ===
-    if st.button("Predict Churn"):
+    if st.button("Prediksi Churn"):
         prediction = model.predict(input_df)[0]
         probability = model.predict_proba(input_df)[0][1]
 
