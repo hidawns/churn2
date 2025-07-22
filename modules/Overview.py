@@ -26,7 +26,7 @@ def show():
             color: #004280;
             line-height: 1.4;
             text-align: justify;
-            <p style='text-align: center; margin-top: 0; font-weight: bold;'>Harga Tidak Kompetitif</p>
+            <p style='text-align: center; margin-top: 0;'><strong>Harga Tidak Kompetitif</p>
             <p>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</p>
         </div>
         """, unsafe_allow_html=True)
