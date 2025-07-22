@@ -59,7 +59,7 @@ def show():
         st.pyplot(fig2)
 
     # === SECTION: Bivariate - Fitur Kategorikal vs Churn ===
-    with st.expander("🔎 Bivariate Analysis - Kategorik vs Churn", expanded=False):
+    with st.expander("🔎 Bivariate Analysis - Fitur Kategorikal vs Churn", expanded=False):
         st.markdown( "Menganalisis hubungan setiap kategori pada fitur kategorikal terhadap masing-masing kelas dalam variabel target churn.")
        
         fig, axs = plt.subplots(6, 3, figsize=(18, 30))
@@ -74,7 +74,7 @@ def show():
         st.pyplot(fig)
 
     # === SECTION: Korelasi Heatmap ===
-    with st.expander("📊 Heatmap Korelasi", expanded=False):
+    with st.expander("📊 Heatmap", expanded=False):
         st.markdown("Menganalisis nilai korelasi antar variabel numerik.")
 
         df['Churn'] = df['Churn'].map({"No": 0, "Yes": 1})
