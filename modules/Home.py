@@ -10,10 +10,10 @@ def show():
     col1, col2 = st.columns([3, 1])
     with col1: 
         st.markdown("\n\n")
-        st.markdown("### 🎯 Tujuan Aplikasi")
+        st.markdown("### 📌 Tujuan Aplikasi")
         st.info(
-            "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan churn menggunakan model **XGBoost** "
-            "yang telah dioptimasi dengan teknik **SMOTE-ENN** dan **GridSearchCV**.")
+            "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost** "
+            "yang dioptimalkan dengan **SMOTE-ENN** sebagai teknik penyeimbangan data, serta **GridSearchCV** sebagai metode tuning hyperparameter.")
         st.markdown(" ")
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
