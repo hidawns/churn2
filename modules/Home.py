@@ -20,11 +20,35 @@ def show():
         yang dioptimalkan dengan teknik resampling <b>SMOTE-ENN</b> serta hyperparameter tuning <b>GridSearchCV</b>.
         </div>
         """, unsafe_allow_html=True)
-        
+
+        '''
         st.markdown(" ")
         if st.button("**Pergi ke Halaman Prediksi**"):
             st.session_state.page = "Inference"
             st.rerun()
+        '''
+
+        st.markdown("""
+        <style>
+        .blue-button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #1f77b4;
+            border-radius: 5px;
+            background-color: white;
+            color: #1f77b4;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .blue-button:hover {
+            background-color: #1f77b4;
+            color: white;
+        }
+        </style>
+        <a href="#inference" class="blue-button">Pergi ke Halaman Prediksi</a>
+    """, unsafe_allow_html=True)
+
             
     with col2:
         st.image("assets/churn_image.jpg", use_container_width=True)
