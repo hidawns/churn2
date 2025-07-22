@@ -70,7 +70,7 @@ def show():
     st.markdown("---")
 
     # SECTION 4 - Manfaat prediksi churn
-    st.markdown("### Manfaat prediksi churn")
+    st.markdown("### Manfaat prediksi churnAAA")
     st.info("""Prediksi churn membantu perusahaan mengidentifikasi secara dini pelanggan yang berisiko berhenti menggunakan produk atau layanan. 
     Dengan informasi ini, perusahaan dapat merancang strategi retensi yang lebih efektif untuk mempertahankan pelanggan yang dimiliki. 
     Upaya ini berkontribusi untuk mengurangi biaya akuisisi pelanggan baru serta menjaga stabilitas bisnis perusahaan.
