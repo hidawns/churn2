@@ -12,6 +12,18 @@ def show():
 - Churn dapat disebabkan pengalaman pelanggan yang tidak memuaskan, harga yang tidak kompetitif, kualitas produk yang buruk, serta ketidaksesuaian layanan yang ditawarkan terhadap kebutuhan pelanggan.  
 """)
 
+    # SECTION 2 - Tindakan Preventif
+    st.markdown("---")
+    st.markdown("### Penyebab churn pelanggan")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan, serta masalah teknis yang dialami.")
+    with col2:
+        st.info(" **Harga Tidak Kompetitif**\n\nKetidaksesuaian antara harga dan kualitas layanan yang diterima.")
+    with col3:
+        st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
+
     st.markdown("---")
 
     # SECTION 2 - Mengapa Deteksi Churn Penting?
@@ -21,19 +33,6 @@ def show():
 - Biaya mencari pelanggan baru **5x lebih mahal** daripada mempertahankan pelanggan lama.
 - Deteksi churn lebih awal memberi kesempatan melakukan intervensi.
 """)
-
-    st.markdown("---")
-
-    # SECTION 3 - Tindakan Preventif
-    st.markdown("### 🎯 Apa yang Bisa Dilakukan Saat Pelanggan Mau Churn?")
-    col1, col2, col3 = st.columns(3)
-
-    with col1:
-        st.info(" **Loyalty Program**\n\nTawarkan insentif bagi pelanggan setia.")
-    with col2:
-        st.info(" **Intervensi Personal**\n\nHubungi pelanggan dengan pendekatan khusus.")
-    with col3:
-        st.info(" **Diskon Khusus**\n\nBerikan penawaran kompetitif agar pelanggan tetap bertahan.")
 
     st.markdown("---")
 
