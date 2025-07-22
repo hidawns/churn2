@@ -2,7 +2,7 @@ import streamlit as st
 
 def show():
     st.title("Churn Prediction App")
-    st.markdown("##### Optimalisasi Model XGBoost Menggunakan Teknik Hybrid Resampling SMOTE-ENN dan Hyperparameter Tuning GridSearchCV dalam Prediksi Churn Pelanggan")
+    st.markdown("##### Optimalisasi Model XGBoost Menggunakan Teknik Hybrid Resampling SMOTE-ENN<br>dan Hyperparameter Tuning GridSearchCV dalam Prediksi Churn Pelanggan", unsafe_allow_html=True)
     st.write("Dikembangkan oleh: Hidayati Tri Winasis")
 
     st.markdown("---")  
