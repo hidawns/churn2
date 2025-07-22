@@ -20,7 +20,7 @@ def show():
         target_count = 1 if target_col in df.columns else 0
         col1, col2, col3, col4 = st.columns(4)
         with col1:
-            st.info(f"**Jumlah Baris**\n\n{total_rows}")
+            st.info(f"**Jumlah BarisA**\n\n{total_rows}")
         with col2:
             st.info(f"**Jumlah Kolom**\n\n{total_columns}")
         with col3:
