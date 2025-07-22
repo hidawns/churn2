@@ -18,7 +18,7 @@ def show():
         target_col = 'Churn'
         feature_cols = df.drop(columns=[target_col]).shape[1] if target_col in df.columns else total_columns
         target_count = 1 if target_col in df.columns else 0
-        col1, col2, col3, col4 = st.columns(4)
+        col1, col2, col3 = st.columns(3)
         with col1:
             st.info(f"**Jumlah Baris**\n\n{total_rows}")
         with col2:
@@ -26,8 +26,8 @@ def show():
         with col3:
             st.markdown(" ")
             #st.info(f"**Fitur Numerik**\n\n{feature_cols}")
-        with col4:
-            st.markdown(" ")
+        #with col4:
+            #st.markdown(" ")
             #st.info(f"**Fitur Kategorikal**\n\n{target_count}")
 
     # === Sampel Dataset ===
