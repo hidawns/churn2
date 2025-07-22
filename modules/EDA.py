@@ -16,8 +16,8 @@ def show():
     Eksplorasi Data dilakukan untuk memperoleh pemahaman awal terkait data yang akan digunakan.""")
 
     # === SECTION: Univariate - Numerical ===
-    with st.expander("📊 Univariate Analysis - Variabel Numerik", expanded=True):
-        st.markdown("Melihat distribusi numerik: `tenure`, `MonthlyCharges`, `TotalCharges`")
+    with st.expander("📊 Univariate Analysis - Fitur Numerik", expanded=True):
+        st.markdown("Melihat sebaran nilai dari setiap fitur numerik untuk memahami pola distribusinya.")
 
         numeric_cols = ['tenure', 'MonthlyCharges', 'TotalCharges']
         fig, axs = plt.subplots(1, 3, figsize=(18, 5))
@@ -27,9 +27,9 @@ def show():
         st.pyplot(fig)
 
     # === SECTION: Univariate - Categorical ===
-    with st.expander("📊 Univariate Analysis - Variabel Kategorik", expanded=False):
+    with st.expander("📊 Univariate Analysis - Fitur Kategorikal", expanded=False):
         categorical_cols = df.select_dtypes(include='object').drop(columns='customerID').columns
-        st.markdown(f"Menampilkan distribusi untuk {len(categorical_cols)} kolom kategorik.")
+        st.markdown("Melihat sebaran kategori yang dimiliki setiap fitur kategorikal untuk memahami pola distribusinya.")
 
         fig, axs = plt.subplots(6, 3, figsize=(18, 30))
         axs = axs.ravel()
@@ -43,9 +43,9 @@ def show():
         st.pyplot(fig)
 
     # === SECTION: Bivariate - Numerik vs Churn ===
-    with st.expander("🔎 Bivariate Analysis - Numerik vs Churn", expanded=False):
-        st.markdown("Perbandingan numerik berdasarkan churn:")
-        
+    with st.expander("🔎 Bivariate Analysis - Fitur Numerik vs Churn", expanded=False):
+        st.markdown("Menganalisis hubungan setiap fitur numerik terhadap masing-masing kelas dalam variabel target churn.")
+
         fig1, axs1 = plt.subplots(1, 3, figsize=(18, 5))
         for i, col in enumerate(numeric_cols):
             sns.boxplot(data=df, x='Churn', y=col, ax=axs1[i], palette='pastel')
@@ -58,10 +58,10 @@ def show():
             axs2[i].set_title(f'{col} vs Churn', fontweight='bold')
         st.pyplot(fig2)
 
-    # === SECTION: Bivariate - Kategorik vs Churn ===
+    # === SECTION: Bivariate - Fitur Kategorikal vs Churn ===
     with st.expander("🔎 Bivariate Analysis - Kategorik vs Churn", expanded=False):
-        st.markdown("Distribusi setiap variabel kategorik dibedakan berdasarkan churn.")
-
+        st.markdown( "Menganalisis hubungan setiap kategori pada fitur kategorikal terhadap masing-masing kelas dalam variabel target churn.")
+       
         fig, axs = plt.subplots(6, 3, figsize=(18, 30))
         axs = axs.ravel()
         for i, col in enumerate(categorical_cols):
@@ -74,8 +74,8 @@ def show():
         st.pyplot(fig)
 
     # === SECTION: Korelasi Heatmap ===
-    with st.expander("🌡️ Korelasi antar Variabel Numerik", expanded=False):
-        st.markdown("Menganalisis korelasi antar variabel numerik termasuk `Churn` (0/1)")
+    with st.expander("📊 Heatmap Korelasi", expanded=False):
+        st.markdown("Menganalisis nilai korelasi antar variabel numerik.")
 
         df['Churn'] = df['Churn'].map({"No": 0, "Yes": 1})
         numerical_columns = df.select_dtypes(include=['int64', 'float64']).columns
