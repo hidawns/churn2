@@ -24,9 +24,9 @@ def show():
         with col2:
             st.info(f"**Jumlah Kolom**\n\n{total_columns}")
         with col3:
-            st.info(f"**Fitur**\n\n{feature_cols}")
+            #st.info(f"**Fitur Numerik**\n\n{feature_cols}")
         with col4:
-            st.info(f"**Target**\n\n{target_count}")
+            #st.info(f"**Fitur Kategorikal**\n\n{target_count}")
 
     # === Sampel Dataset ===
     with st.expander("📄 Sampel Data (Top 5 Baris)"):
