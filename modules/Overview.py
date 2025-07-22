@@ -22,7 +22,7 @@ def show():
             padding: 16px;
             border-radius: 6px;
             color: #004280;
-            line-height: 1.5;
+            line-height: 1.4;
         '>
             <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Harga Tidak Kompetitif</div>
             <div style='text-align: center;'>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</div>
@@ -36,7 +36,7 @@ def show():
             padding: 16px;
             border-radius: 6px;
             color: #004280;
-            line-height: 1.5;
+            line-height: 1.4;
         '>
             <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
             <div style='text-align: justify;'>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</div>
@@ -50,7 +50,7 @@ def show():
             padding: 16px;
             border-radius: 6px;
             color: #004280;
-            line-height: 1.5;
+            line-height: 1.4;
         '>
             <div style='text-align: center; font-weight: 650; margin-bottom: 8px;'>Tidak Memenuhi Kebutuhan</div>
             <div style='text-align: justify;'>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</div>
@@ -69,8 +69,8 @@ def show():
 
     st.markdown("---")
 
-    # SECTION 4 - Manfaat prediksi churn
-    st.markdown("### Manfaat prediksi churnAAA")
+    # SECTION 4 - Manfaat Prediksi Churn
+    st.markdown("### Manfaat prediksi churn")
     st.info("""Prediksi churn membantu perusahaan mengidentifikasi secara dini pelanggan yang berisiko berhenti menggunakan produk atau layanan. 
     Dengan informasi ini, perusahaan dapat merancang strategi retensi yang lebih efektif untuk mempertahankan pelanggan yang dimiliki. 
     Upaya ini berkontribusi untuk mengurangi biaya akuisisi pelanggan baru serta menjaga stabilitas bisnis perusahaan.
