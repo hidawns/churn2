@@ -22,7 +22,7 @@ def show():
         """, unsafe_allow_html=True)
         
         st.markdown(" ")
-        if st.button("Pergi ke Halaman Prediksi"):
+        if st.button("**Pergi ke Halaman Prediksi**"):
             st.session_state.page = "Inference"
             st.rerun()
             
