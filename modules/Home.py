@@ -14,26 +14,6 @@ def show():
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost** "
             "yang dioptimalkan dengan **SMOTE-ENN** serta **GridSearchCV**.")
         st.markdown(" ")
-
-        st.markdown("""
-            <style>
-            div.stButton > button:first-child {
-             
-                color: white;
-                padding: 0.6em 1.2em;
-                border-radius: 8px;
-                font-weight: bold;
-                transition: 0.3s;
-            }
-            div.stButton > button:first-child:hover {
-                background-color: #2878cc;
-                color: white;
-            }
-            </style>
-        """, unsafe_allow_html=True)
-
-
-        
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
             st.rerun()
