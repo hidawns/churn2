@@ -16,7 +16,53 @@ def show():
     st.markdown("---")
     st.markdown("### Penyebab churn pelanggan")
     col1, col2, col3 = st.columns(3)
+    with col1:
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.5;
+            border-left: 5px solid #91c3f9;
+        '>
+            <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Harga Tidak Kompetitif</div>
+            <div style='text-align: justify;'>Harga yang tidak bersaing membuat pelanggan mencari alternatif dengan penawaran lebih baik.</div>
+        </div>
+        """, unsafe_allow_html=True)
 
+    with col2:
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.5;
+            border-left: 5px solid #91c3f9;
+        '>
+            <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
+            <div style='text-align: justify;'>Pengalaman negatif, seperti gangguan layanan atau support lambat, dapat mendorong pelanggan meninggalkan layanan.</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col3:
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.5;
+            border-left: 5px solid #91c3f9;
+        '>
+            <div style='text-align: center; font-weight: bold; margin-bottom: 8px;'>Tidak Memenuhi Kebutuhan</div>
+            <div style='text-align: justify;'>Layanan yang tidak relevan dengan kebutuhan atau harapan pelanggan dapat memicu keputusan untuk churn.</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    
+    '''
     with col1:
         st.markdown("""
         <div style='
@@ -28,6 +74,7 @@ def show():
             text-align: justify;
             <p style='text-align: center; margin-top: 0;'><strong>Harga Tidak Kompetitif</p>
             <p>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</p>
+            
         </div>
         """, unsafe_allow_html=True)
 
@@ -58,7 +105,8 @@ def show():
             <p>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</p>
         </div>
         """, unsafe_allow_html=True)
-
+'''
+    
     
     #with col1:
         #st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
