@@ -98,9 +98,9 @@ def show():
             - Tinjau kembali riwayat langganan pelanggan untuk mengidentifikasi gangguan atau masalah pada layanan.
             """)
         else:
-            st.success(f"✅ **Pelanggan tersebut diprediksi akan tetap loyal (non-churn).**")
+            st.info(f"✅ **Pelanggan tersebut diprediksi akan tetap loyal (non-churn).**")
             #st.markdown(f"**Probabilitas churn:** `{probability:.2f}`")
-            st.success("""
+            st.info("""
             **Insight:**
             - Pelanggan tersebut tidak menunjukkan kecenderungan untuk churn.
             - Pertahankan loyalitas pelanggan tersebut dengan memberi reward maupun penawaran yang menarik.
