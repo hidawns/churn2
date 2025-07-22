@@ -9,7 +9,6 @@ def show():
 
     col1, col2 = st.columns([3, 1])
     with col1: 
-        st.markdown("\n\n")
         st.markdown("### 📌 Tujuan Aplikasi")
         st.info(
             "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan akan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma **XGBoost** "
