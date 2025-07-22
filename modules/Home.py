@@ -5,15 +5,7 @@ def show():
     st.markdown("##### Optimalisasi Model XGBoost Menggunakan Teknik Hybrid Resampling SMOTE-ENN dan Hyperparameter Tuning GridSearchCV dalam Prediksi Churn Pelanggan")
     st.write("Dikembangkan oleh: Hidayati Tri Winasis")
 
-    st.markdown("---")
-
-    col1, col2 = st.columns([3, 1])
-    with col1: 
-        st.markdown("### 📌 Tujuan Aplikasi")
-        st.info(
-            "Aplikasi ini bertujuan untuk memprediksi kemungkinan seorang pelanggan melakukan churn. Aplikasi dibangun dengan mengimplementasikan machine learning melalui algoritma <b>XGBoost</b>"
-            "yang dioptimalkan dengan teknik resampling <b>SMOTE-ENN</b> serta hyperparameter tuning <b>GridSearchCV</b> .")
-        
+    st.markdown("---")       
         st.markdown("""
         <div style='
             background-color: #e8f2fc;
@@ -26,12 +18,12 @@ def show():
         yang dioptimalkan dengan teknik resampling <b>SMOTE-ENN</b> serta hyperparameter tuning <b>GridSearchCV</b>.
         </div>
         """, unsafe_allow_html=True)
-
         
         st.markdown(" ")
         if st.button("Pergi ke Halaman Prediksi"):
             st.session_state.page = "Inference"
             st.rerun()
+            
     with col2:
         st.image("assets/churn_image.jpg", use_container_width=True)
         
