@@ -12,17 +12,63 @@ def show():
 - Churn dapat disebabkan pengalaman pelanggan yang tidak memuaskan, harga yang tidak kompetitif, kualitas produk yang buruk, serta ketidaksesuaian layanan yang ditawarkan terhadap kebutuhan pelanggan.  
 """)
 
-    # SECTION 2 - Tindakan Preventif
+    # SECTION 2 - Penyebab churn
     st.markdown("---")
     st.markdown("### Penyebab churn pelanggan")
     col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan, serta masalah teknis yang dialami.")
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.4;
+            text-align: justify;
+            border-left: 5px solid #91c3f9;'>
+            <h4 style='text-align: center; margin-top: 0;'>Harga Tidak Kompetitif</h4>
+            <p>Harga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
     with col2:
-        st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.4;
+            text-align: justify;
+            border-left: 5px solid #91c3f9;'>
+            <h4 style='text-align: center; margin-top: 0;'>Kualitas Layanan Buruk</h4>
+            <p>Kualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
     with col3:
-        st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
+        st.markdown("""
+        <div style='
+            background-color: #e8f2fc;
+            padding: 16px;
+            border-radius: 6px;
+            color: #004280;
+            line-height: 1.4;
+            text-align: justify;
+            border-left: 5px solid #91c3f9;'>
+            <h4 style='text-align: center; margin-top: 0;'>Tidak Memenuhi Kebutuhan</h4>
+            <p>Layanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.</p>
+        </div>
+        """, unsafe_allow_html=True)
+
+    
+    #with col1:
+        #st.info(" **Harga Tidak Kompetitif**\n\nHarga yang tidak kompetitif dengan pesaing mendorong pelanggan mencari alternatif lain.")
+    #with col2:
+        st.info(" **Kualitas Layanan Buruk**\n\nKualitas layanan yang tidak memuaskan mendorong pelanggan untuk churn.")
+    #with col3:
+        #st.info(" **Tidak Memenuhi Kebutuhan**\n\nLayanan yang ditawarkan tidak relevan dengan kebutuhan dan preferensi pelanggan.")
 
     st.markdown("---")
 
