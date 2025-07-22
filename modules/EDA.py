@@ -12,8 +12,8 @@ def show():
     df['SeniorCitizen'] = df['SeniorCitizen'].map({0: 'No', 1: 'Yes'}).astype('object')
     df.dropna(inplace=True)
 
-    st.markdown("EDA merupakan proses awal untuk memahami karakteristik dan pola data secara menyeluruh sebelum dilakukan pemodelan. 
-    Eksplorasi Data dilakukan untuk memperoleh pemahaman awal terkait data yang akan digunakan.")
+    st.markdown("""EDA merupakan proses awal untuk memahami karakteristik dan pola data secara menyeluruh sebelum dilakukan pemodelan. 
+    Eksplorasi Data dilakukan untuk memperoleh pemahaman awal terkait data yang akan digunakan.""")
 
     # === SECTION: Univariate - Numerical ===
     with st.expander("📊 Univariate Analysis - Variabel Numerik", expanded=True):
