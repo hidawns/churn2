@@ -14,7 +14,7 @@ def show():
 
     # SECTION 2 - Tindakan Preventif
     st.markdown("---")
-    st.markdown("### Penyebab churn pelanggan")
+    st.markdown("### Penyebab churn pelangganAAAAAAA")
     col1, col2, col3 = st.columns(3)
 
     with col1:
