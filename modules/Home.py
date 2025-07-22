@@ -20,7 +20,7 @@ def show():
             padding: 16px;
             border-radius: 6px;
             color: #004280;
-            line-height: 1.0;
+            line-height: 1.2;
             text-align: justify'>
         Aplikasi ini membantu mengidentifikasi pelanggan yang berpotensi churn menggunakan data historis dan machine learning. 
         Dirancang untuk analisis data, visualisasi, dan prediksi churn secara interaktif.
