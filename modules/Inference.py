@@ -27,17 +27,17 @@ def show():
         dependents = st.selectbox("Has Dependents?", ['Yes', 'No'])
         phone_service = st.selectbox("Has Phone Service?", ['Yes', 'No'])
         paperless_billing = st.selectbox("Uses Paperless Billing?", ['Yes', 'No'])
-        multiple_lines = st.selectbox("Multiple Lines", ['No', 'Yes', 'No phone service'])
-        internet_service = st.selectbox("Internet Service", ['DSL', 'Fiber optic', 'No'])
-        online_security = st.selectbox("Online Security", ['Yes', 'No', 'No internet service'])
-        online_backup = st.selectbox("Online Backup", ['Yes', 'No', 'No internet service'])
+        multiple_lines = st.selectbox("Has Multiple Phone Lines?", ['No', 'Yes', 'No phone service'])
+        internet_service = st.selectbox("Internet Service Type", ['DSL', 'Fiber optic', 'No'])
+        online_security = st.selectbox("Online Security Enabled?", ['Yes', 'No', 'No internet service'])
+        online_backup = st.selectbox("Online Backup Enabled?", ['Yes', 'No', 'No internet service'])
         
     with col2:
-        device_protection = st.selectbox("Device Protection", ['Yes', 'No', 'No internet service'])
-        tech_support = st.selectbox("Tech Support", ['Yes', 'No', 'No internet service'])
-        streaming_tv = st.selectbox("Streaming TV", ['Yes', 'No', 'No internet service'])
-        streaming_movies = st.selectbox("Streaming Movies", ['Yes', 'No', 'No internet service'])
-        contract = st.selectbox("Contract", ['Month-to-month', 'One year', 'Two year'])
+        device_protection = st.selectbox("Uses Device Protection?", ['Yes', 'No', 'No internet service'])
+        tech_support = st.selectbox("Has Tech Support?", ['Yes', 'No', 'No internet service'])
+        streaming_tv = st.selectbox("Streams TV?", ['Yes', 'No', 'No internet service'])
+        streaming_movies = st.selectbox("Streams Movies?", ['Yes', 'No', 'No internet service'])
+        contract = st.selectbox("Contract Type", ['Month-to-month', 'One year', 'Two year'])
         payment_method = st.selectbox("Payment Method", [
             'Electronic check', 'Mailed check', 
             'Bank transfer (automatic)', 'Credit card (automatic)' ])
@@ -84,7 +84,7 @@ def show():
     input_df[numeric_cols] = scaler.transform(input_df[numeric_cols])
 
     # === Predict ===
-    if st.button("Prediksi Churn"):
+    if st.button("Predict Churn"):
         prediction = model.predict(input_df)[0]
         probability = model.predict_proba(input_df)[0][1]
 
