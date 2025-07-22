@@ -6,15 +6,15 @@ import io
 
 def show():
     st.title("📊 Dataset: IBM Telco Customer Churn")
-
-    df = pd.read_csv("IBM Churn.csv")
-    df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
-    df['SeniorCitizen'] = df['SeniorCitizen'].map({0: 'No', 1: 'Yes'}).astype('object')
-    
     # === Deskripsi Dataset ===
     st.markdown("Dataset yang digunakan pada penelitian ini adalah IBM Telco Customer Churn yang disediakan oleh IBM Congnos Analytics (2019). 
     Dataset ini telah digunakan secara luas dalam penelitian terkait prediksi churn di industri telekomunikasi dan bersifat open source sehingga dapat diakses secara terbuka oleh publik. 
     Dataset ini terdiri dari 7043 observasi dengan 21 fitur yang memuat informasi pelanggan dari perusahaan telekomunikasi yang mencakup data demografi, jenis layanan yang digunakan, metode pembayaran, dan status churn pelanggan.")
+    
+    df = pd.read_csv("IBM Churn.csv")
+    df['TotalCharges'] = pd.to_numeric(df['TotalCharges'], errors='coerce')
+    df['SeniorCitizen'] = df['SeniorCitizen'].map({0: 'No', 1: 'Yes'}).astype('object')
+    
     # === Statistik Dataset ===
     with st.expander("📊 Statistik Dataset", expanded=True):
         total_rows = df.shape[0]
