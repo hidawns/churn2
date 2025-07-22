@@ -38,7 +38,7 @@ def show():
             color: #004280;
             line-height: 1.5;
         '>
-            <div style='text-align: center; font-weight: 600; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
+            <div style='text-align: center; font-weight: 700; margin-bottom: 8px;'>Kualitas Layanan Buruk</div>
             <div style='text-align: justify;'>Kualitas layanan yang tidak memuaskan dapat mendorong pelanggan untuk churn.</div>
         </div>
         """, unsafe_allow_html=True)
