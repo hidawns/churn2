@@ -27,7 +27,7 @@ def show():
         with col2:
             st.info(f"**Jumlah Kolom**\n\n{total_columns}")
         with col3:
-            st.markdown("**Distribusi Kelas Target**\n\n73.5% : 24.5%")
+            st.info("**Distribusi Kelas Target**\n\n73.5% : 24.5%")
 
     # === Sampel Dataset ===
     with st.expander("📄 Sampel Dataset"):
