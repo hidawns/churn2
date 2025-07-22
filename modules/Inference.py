@@ -5,7 +5,8 @@ import pickle
 
 def show():
     st.title("🔍 Prediksi Churn Pelanggan")
-    st.markdown("Lengkapi formulir di bawah ini untuk mengetahui hasil prediksi churn pelanggan.")
+    st.markdown("Lengkapi formulir di bawah ini untuk memprediksi apakah seorang pelanggan berpotensi untuk churn atau tidak.")
+    st.markdown(" ")
 
     # === Load saved model and scaler ===
     with open("final_churn_model.pkl", "rb") as f:
