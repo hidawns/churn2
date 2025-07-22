@@ -29,6 +29,6 @@ def show():
         
             
     with col2:
-        st.image("assets/churn_image.jpg", use_container_width=True)
+        st.image("assets/churn_image2.jpg", use_container_width=True)
         
     st.markdown("---")
