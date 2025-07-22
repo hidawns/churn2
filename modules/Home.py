@@ -18,7 +18,7 @@ def show():
         st.markdown("""
             <style>
             div.stButton > button:first-child {
-                background-color: #3399ff;
+             
                 color: white;
                 padding: 0.6em 1.2em;
                 border-radius: 8px;
